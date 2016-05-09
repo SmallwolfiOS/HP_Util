@@ -1,9 +1,9 @@
 //
 //  HP_Util.h
-//  dsadas
+//  HP_UtilExample
 //
-//  Created by Jason on 16/5/9.
-//  Copyright © 2016年 Jason. All rights reserved.
+//  Created by 马海平 on 16/5/9.
+//  Copyright © 2016年 MHP. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +11,7 @@
 
 @interface HP_Util : NSObject
 
-// 使用UIColor创建UIImage
-//+ (UIImage *) createImageWithColor: (UIColor *)color;
+//十六进制颜色转color
++ (UIColor *) hexStringToColor: (NSString *) stringToConvert;
 
 @end
