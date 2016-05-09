@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 @interface HP_Util : NSObject
 
 // 使用UIColor创建UIImage
-+ (UIImage *) createImageWithColor: (UIColor *)color;
+//+ (UIImage *) createImageWithColor: (UIColor *)color;
 
 @end
