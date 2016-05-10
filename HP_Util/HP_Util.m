@@ -9,7 +9,11 @@
 #import "HP_Util.h"
 
 @implementation HP_Util
-
+/**
+ *  把16进制的字符串转换为颜色
+ *  @param stringToConvert 16进制的字符串（6位）
+ *  @return 颜色UIColor
+ */
 + (UIColor *) hexStringToColor: (NSString *) stringToConvert
 
 {
@@ -56,7 +60,22 @@
     
     
 }
-
+/**
+ *  UIColor转换为纯色UIImage
+ *  @param color UIColor
+ *  @return 纯色的UIImage
+ */
++ (UIImage *) createImageWithColor: (UIColor *)color{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
 
 
 @end

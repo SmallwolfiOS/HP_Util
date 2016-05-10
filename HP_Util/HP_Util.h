@@ -11,7 +11,16 @@
 
 @interface HP_Util : NSObject
 
-//十六进制颜色转color
+/**
+ *  把16进制的字符串转换为颜色
+ *  @param stringToConvert 16进制的字符串（6位）
+ *  @return 颜色UIColor
+ */
 + (UIColor *) hexStringToColor: (NSString *) stringToConvert;
-
+/**
+ *  UIColor转换为纯色UIImage
+ *  @param color UIColor
+ *  @return 纯色的UIImage
+ */
++ (UIImage *) createImageWithColor: (UIColor *)color;
 @end
