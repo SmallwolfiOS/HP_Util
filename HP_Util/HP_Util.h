@@ -23,4 +23,7 @@
  *  @return 纯色的UIImage
  */
 + (UIImage *) createImageWithColor: (UIColor *)color;
+//随机颜色
++(UIColor *) randomColor;
+
 @end
