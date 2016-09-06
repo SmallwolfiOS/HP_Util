@@ -77,7 +77,7 @@
     return theImage;
 }
 /**
- *  随机颜色
+ *  获取随机颜色
  *
  *  @return UIColor
  */
@@ -89,5 +89,24 @@
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
 }
 
+/**
+ *  将View完全圆角化
+ *
+ *  @param view 需要圆角化的view
+ */
++ (void) corneredViewTotally: (UIView *)view{
+    view.layer.cornerRadius = view.frame.size.height/2;
+    view.layer.masksToBounds = YES;
+}
+/**
+ *  给view添加圆角
+ *
+ *  @param view   传入的view
+ *  @param radius 圆角的角度
+ */
++ (void) corneredView: (UIView *)view byRadius:(CGFloat)radius{
+    view.layer.cornerRadius = radius;
+    view.layer.masksToBounds = YES;
+}
 
 @end
