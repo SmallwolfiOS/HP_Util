@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'HP_Util'
-s.version      = '0.0.4'
+s.version      = '0.0.5'
 s.summary      = 'An easy tool for your iOS project'
 s.homepage     = 'https://github.com/SmallwolfiOS/HP_Util'
 s.license      = 'MIT'
